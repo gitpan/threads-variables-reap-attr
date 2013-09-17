@@ -3,10 +3,11 @@ abstract: 'reap variables in new threads by attribute'
 author:
   - 'Jens Rehsack <rehsack@cpan.org>'
 build_requires:
-  Test::More: 0
+  Test::More: 0.90
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3603'
+  Module::Build: 0.40
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,13 +16,14 @@ name: threads-variables-reap-attr
 provides:
   threads::variables::reap::attr:
     file: lib/threads/variables/reap/attr.pm
-    version: 0.05
+    version: 0.06
 recommends:
   threads: 0
 requires:
   Attribute::Lexical: 0.002
   perl: 5.008
-  threads::variables::reap: 0.05
+  threads::variables::reap: 0.06
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.05
+  repository: https://github.com/rehsackthreads-variables-reap-attr
+version: 0.06
